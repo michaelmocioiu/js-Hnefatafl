@@ -34,6 +34,7 @@ class Board {
         }
         document.getElementById('game_start').style.visibility = 'hidden'
         document.getElementById('in_progress').style.visibility = 'visible'
+        console.log('kys vlad')
     }
 }
 
