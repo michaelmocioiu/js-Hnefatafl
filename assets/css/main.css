@@ -1,0 +1,106 @@
+body{
+    background-color: rgb(72, 97, 97);
+}
+
+#bgboard, #board {
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 90vh;
+    height: 90vh;
+    border: 1px solid black;
+    table-layout:fixed;
+    border-collapse: collapse;
+    position: absolute;
+}
+
+#bgboard tr td {
+    height: calc(100% / 11);
+    width: calc(100% / 11);
+    background-color: rgb(226, 226, 226);
+    vertical-align: bottom;
+    text-align: left;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 80%;
+    border: 1px solid rgb(78, 78, 78);
+    
+}
+
+.attacker, .defender {
+    background-color: rgb(151, 151, 151) !important;
+}
+
+#bgcenter, .bgcorner {
+    background-color: rgb(59, 59, 59) !important;
+}
+
+img {
+    height: 80%;
+    width: 80%;
+    margin: auto;
+    padding: 0px;
+}
+
+#board tr td{
+    border: 1px solid rgba(0, 0, 0, 0);
+    height: calc(100% / 11);
+    width: calc(100% / 11);
+    text-align: center;
+}
+
+.piece{
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    background: none;
+    border: none;
+    cursor: grab;
+}
+
+#game_start {
+    position: absolute;
+    height: 7vh;
+    width: 90vh;
+    margin: 1.25% auto 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 1vh;
+}
+
+.game_button {
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    font-size: 4vh;
+    border: 0;
+    border-radius: 2vh;
+    left: 0;
+    right: 0;
+    bottom: 1vh;
+    height: 7vh;
+}
+
+
+#reset_board{
+    width: 48.75%;
+    float: right;
+}
+
+#undo, #redo {
+    width: 24.25% ;
+    margin: 0 1.25% 0 0;
+}
+
+#redo {
+    float: right;
+}
+
+#in_progress {
+    visibility: hidden;
+    position: absolute;
+    height: 7vh;
+    width: 90vh;
+    margin: 1.25% auto 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 1vh;
+}
